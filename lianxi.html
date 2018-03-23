@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>联系我们</title>
+		<link rel="shortcut icon" href="images/ico1.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="css/lianxi.css" />
+	</head>
+	<body>
+		<div class="pkc">
+			<div class="header">
+				<div class="left">
+					<a class="logo" href="index.html"><img src="images/logo.png"  alt="logo"/>
+					</a>
+				</div>
+				<div class="right">
+					<ul class="nav">
+						<li><a href="index.html">首页</a></li>
+						<li><a href="#">产品介绍</a></li>
+						<li><a href="lianxi.html">联系我们</a></li>
+						<li><a href="#">申请合作</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="content">
+				<div class="banner">
+					<div class="banner-img">
+						<img src="images/pkc.jpg"  alt="皮卡充"/>
+						<span><p>联系我们</p>
+						               客服电话:020-2810825<br /><br />
+						               地址：广州市天河区燕岭路93号新燕大厦1103
+						</span>
+					</div>
+				</div>
+				
+				<!--表单-->
+				
+				<div class="form">
+					<p class="h3" >申请合作资料填写</p>
+					<p  class="p">带<span class="red">*</span>号为必填</p>
+					<div class="form-left">
+						<div class="form-left-1">
+								<p class="title">负责人信息</p>
+								<form>
+								<span class="red">*</span>
+								<span class="name">姓&nbsp;&nbsp;&nbsp;名</span>
+								<input id="name" class="in" type="text"  placeholder="请输入真实姓名" ><br/>
+								<span class="red">*</span>
+								<span class="name">手机号</span>
+								<input id="phone" class="in"  maxLength="11" type="text" placeholder="请输入11位手机号">
+								<!--<button id="get" value="获取验证码" onclick="settime(this);">获取验证码</button>-->
+								<input type="button" id="get"  class="" value=" 获取验证码" onclick="settime(this);">
+								<br/>
+								<span class="red">*</span>
+								<span class="name">验证码</span>
+								<input id="password" class="in" type="text" placeholder="请输入验证码">
+								</form>
+						</div>
+						<div class="form-left-2">
+							<p class="title">门店信息</p>
+							    <span class="red">*</span>
+								<span class="name">店 &nbsp;&nbsp;名</span>
+								<input id="shopname" class="in" type="text" placeholder="您的门店叫什么？"><br/>
+								<span class="red">*</span>
+								<span class="name">地&nbsp;&nbsp;&nbsp;址</span>
+								<input id="site" class="in" type="text" placeholder="您的门店在哪？" />
+								<br />
+								
+								<div class="item-amount1">
+								<span class="red">*</span>
+								<span class="name">餐桌数量</span>	
+							    <input id="number" class="inx" type="text" value="1" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">
+							    <img src="images/up.png"  class="img1"  onclick="img1();" />
+							    <img src="images/down.png"  class="img2" onclick="img2();" />
+							    </div>
+							    
+								<div class="item-amount2">
+	                            <span class="red">*</span>
+								<span class="name">申请数量</span>
+								<input id="number2" class="inx" type="text" value="1" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">
+								<img src="images/up.png" id="" class="img1" onclick="up();" />
+							    <img src="images/down.png" id="" class="img2" onclick="down();" />
+								<span class="name">每个门店最多申请两台</span>
+								</div>
+						</div>
+						</div>
+						<div class="form-right">
+							<div class="form-right-top">
+								<span class="red">*</span>
+								<span class="title">门店资质</span>
+								<input class="photo" id="photo" style="display: none;"   type="file" />
+								<div class="b" onclick="javascript:setImagePreview();" id="localImag"  >
+								<img id="preview"   src="images/img1.png" width="140" height="140" style="display:block; ">
+									<!--<div class="b1" id="boder"></div>
+									<div class="b2" id="boder"></div>
+									<p id="boder">上传营业执照</p>-->
+								</div>
+							</div>
+							<div class="form-right-bottom">
+								<span class="title">&nbsp;&nbsp;门店照片</span>
+								<input class="in" id="photo2" style="display: none;" type="file" />
+								<div class="b" onclick="javascript:setImagePreview2();" id="localImag2">
+									<img id="preview2"  src="images/img2.png" width="140" height="140" style="display:block; ">
+									<!--<div class="b1"></div>
+									<div class="b2"></div>
+									<p>上传店铺门面情况</p>-->
+							</div>
+					       </div>
+					       <input type="button" id="tijiao" class="button" value="提交申请"  onclick="clickbutton()"/>
+					</div>
+				</div>
+			
+			
+				
+			<!--footer-->
+			
+		    <div class="footer">
+				<div class="footer-left">
+						<a class="footer-logo">
+							<img src="images/logo_footer.png" />
+						</a>
+					    <p>
+							<span>广州皮卡充科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							<span>客服电话：020-28108285</span><br />
+							<span>地址：广州市天河区燕岭路93号新燕大厦1103</span><br />
+							<span><a style="color:white;" href="#" target="_blank">
+							粤ICP备17061735号-1</a></span>
+						</p>
+				</div>
+				<div class="footer-right">
+					<div class="footer-right-img">
+					<div class="footer-right-img1">
+						<img src="images/routine.png" />
+						<p>皮卡充</p>
+					</div>
+					<div class="footer-right-img2">
+						<img src="images/wechat.png" />
+						<p>皮卡充公众号</p>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- jq 放着自己写的js前面 -->
+		<script src="js/jquery/jquery.min.js"></script>
+		<script src="js/lianxi.js"></script>
+	</body>
+</html>
